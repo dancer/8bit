@@ -4,33 +4,33 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 relative">
-      <div className="fixed top-0 left-0 w-full overflow-hidden whitespace-nowrap text-white bg-black bg-opacity-90 z-50">
+      <div className="fixed top-0 left-0 w-full overflow-hidden whitespace-nowrap text-white bg-gradient-to-r from-black via-gray-800 to-black bg-opacity-60 z-50">
         <div className="relative flex overflow-x-hidden">
           <div className="py-1 animate-marquee flex items-center">
             <div className="marquee-content flex gap-20 items-center">
               <div className="marquee-text flex items-center">
                 <div className="flex flex-row space-x-2">
-                  <span>Join Warp <span className="">Minigame coming soon!</span></span>
+                <span>Join Warp <span className="text-[#06c258]">Minigame coming soon!</span></span> <span className="align-top emoji">🎲</span>
                 </div>
               </div>
               <div className="marquee-text flex items-center">
                 <div className="flex flex-row space-x-2">
-                  <span><span className="">Payroll and compliance</span> for startups.</span>
+                <span>Payroll and compliance <span className="text-[#06c258]">for startups.</span></span> <span className="align-top emoji">🎁</span>
                 </div>
               </div>
               <div className="marquee-text flex items-center">
                 <div className="flex flex-row space-x-2">
-                  <span>Find out more by <span className="">scrolling below</span></span>
+                <span>Find out more by <span className="text-[#06c258]">scrolling below</span></span> <span className="align-top emoji">👇</span>
                 </div>
               </div>
               <div className="marquee-text flex items-center">
                 <div className="flex flex-row space-x-2">
-                  <span>We save you money <span className="">give us a chance!</span></span>
+                <span>We save you money <span className="text-[#06c258]">give us a chance!</span></span> <span className="align-top emoji">💰</span>
                 </div>
               </div>
               <div className="marquee-text flex items-center">
                 <div className="flex flex-row space-x-2">
-                  <span>Save an average <span className="">of $20K!</span></span>
+                <span>Save an average <span className="text-[#06c258]">of $20K!</span></span> <span className="align-top emoji">💸</span>
                 </div>
               </div>
               <div className="w-25"></div>
@@ -40,33 +40,32 @@ export default function Home() {
             <div className="marquee-content flex gap-20 items-center">
               <div className="marquee-text flex items-center">
                 <div className="flex flex-row space-x-2">
-                  <span>Join Warp <span className="">Minigame coming soon!</span></span>
+                  <span>Join Warp <span className="text-[#06c258]">Minigame coming soon!</span></span> <span className="align-top emoji">🎲</span>
                 </div>
               </div>
               <div className="marquee-text flex items-center">
                 <div className="flex flex-row space-x-2">
-                  <span><span className="">Payroll and compliance</span> for startups.</span>
+                  <span>Payroll and compliance <span className="text-[#06c258]">for startups.</span></span> <span className="align-top emoji">🎁</span>
                 </div>
               </div>
               <div className="marquee-text flex items-center">
                 <div className="flex flex-row space-x-2">
-                  <span>Find out more by <span className="">scrolling below</span></span>
+                  <span>Find out more by <span className="text-[#06c258]">scrolling below</span></span> <span className="align-top emoji">👇</span>
                 </div>
               </div>
               <div className="marquee-text flex items-center">
                 <div className="flex flex-row space-x-2">
-                  <span>We save you money <span className="">give us a chance!</span></span>
+                  <span>We save you money <span className="text-[#06c258]">give us a chance!</span></span> <span className="align-top emoji">💰</span>
                 </div>
               </div>
               <div className="marquee-text flex items-center">
                 <div className="flex flex-row space-x-2">
-                  <span>Save an average <span className="">of $20K!</span></span>
+                  <span>Save an average <span className="text-[#06c258]">of $20K!</span></span> <span className="align-top emoji">💸</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div>      </div>
 {/* buttons */}
       <div className="absolute top-10 right-4 z-50 flex gap-2">
         <a href="https://joinwarp.com/demo" className="nes-btn is-primary">Demo</a>

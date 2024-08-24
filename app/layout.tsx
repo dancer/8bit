@@ -9,6 +9,7 @@ const pressStart2P = Press_Start_2P({ weight: "400", subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "8bit",
   description: "Here I come!",
+  
 };
 
 export default function RootLayout({
@@ -18,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="../images/mario.ico" type="image/x-icon" />
+      </head>
       <body className={`${pressStart2P.className}`}>
         <video autoPlay loop muted playsInline className="fixed top-0 left-0 min-w-full min-h-full object-cover z-[-1] brightness-[40%] blur-[10px]">
           <source src="/images/as.mov" type="video/quicktime" />
@@ -29,3 +33,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+

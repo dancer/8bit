@@ -39,6 +39,10 @@ body {
   animation: spin 5s linear infinite;
 }
 
+.emoji {
+  transform: translateY(-2px);
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);

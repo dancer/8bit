@@ -44,12 +44,10 @@ const Book: React.FC = () => {
         (direction === 'prev' && currentPage > 0)) {
       setIsFlipping(true);
       setFlipDirection(direction);
-      // Immediately update the currentPage
       setCurrentPage(prevPage => direction === 'next' ? prevPage + 2 : prevPage - 2);
-      // Reset flipping state after animation
       setTimeout(() => {
         setIsFlipping(false);
-      }, 1000); // Match this with the CSS animation duration
+      }, 1000); 
     }
   };
 
@@ -102,4 +100,5 @@ const PageNumber: React.FC<{ current: number; total: number }> = ({ current, tot
     {current} / {total}
   </div>
 );
+
 
