@@ -1,8 +1,8 @@
 interface PageProps {
   key: string;
   title: string;
-  content: React.ReactNode; // Changed from string to React.ReactNode
-  children?: React.ReactNode; // Optional children
+  content: React.ReactNode; 
+  children?: React.ReactNode; 
 }
 
 
