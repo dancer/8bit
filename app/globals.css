@@ -18,16 +18,255 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning-logo {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+.animate-marquee {
+  position: relative;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee2 {
+  animation: marquee2 25s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.nes-btn {
+  transition: all 0.3s ease;
+}
+
+.nes-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nes-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-sm {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.book {
+  width: 600px;
+  height: 400px;
+  perspective: 1000px;
+  margin: 50px auto;
+}
+
+.book-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flipping-next {
+  animation: flipNext 0.5s ease-in-out;
+}
+
+.flipping-prev {
+  animation: flipPrev 0.5s ease-in-out;
+}
+
+@keyframes flipNext {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(-90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes flipPrev {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.book {
+  perspective: 1000px;
+  width: 600px;
+  height: 400px;
+  margin: 50px auto;
+}
+
+.book-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.page-spread {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  background-color: #f0f0f0;
+  border: 4px solid #000;
+  box-shadow: inset -4px -4px 0px 0px #808080;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-page {
+  left: 0;
+  border-right: 2px solid #000;
+}
+
+.right-page {
+  right: 0;
+  border-left: 2px solid #000;
+}
+
+.page-content {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.page-title {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.book-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.flipping-page {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.flipping-page.next {
+  right: 0;
+  transform-origin: left;
+  animation: flipNextPage 1s ease-in-out;
+}
+
+.flipping-page.prev {
+  left: 0;
+  transform-origin: right;
+  animation: flipPrevPage 1s ease-in-out;
+}
+
+.flipping-page-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #f0f0f0;
+  border: 4px solid #000;
+  box-shadow: inset -4px -4px 0px 0px #808080;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.flipping-page-content.back {
+  transform: rotateY(180deg);
+}
+
+@keyframes flipNextPage {
+  0% { transform: rotateY(0); }
+  100% { transform: rotateY(-180deg); }
+}
+
+@keyframes flipPrevPage {
+  0% { transform: rotateY(0); }
+  100% { transform: rotateY(180deg); }
+}
+
+.page-number {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
 }

@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🕹️ Warp 8-Bit Book Experience 📚
 
-## Getting Started
+Welcome to the Warp 8-Bit Book Experience! This interactive web application showcases Warp's payroll and compliance services for startups in a fun, retro-style book format.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
+- 📖 Interactive book interface
+- 🎨 8-bit styled design
+- 🔄 Smooth page-turning animations
+- 📱 Responsive layout
+
+## 🛠️ Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- NES.css for 8-bit styling
+
+## 🏁 Getting Started
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dancer/8bit.git
+
+
+Navigate to the project directory:
+
+cd 8bit
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🎮 How to Use
+Click the "Next" and "Previous" buttons to navigate through the book.
+Enjoy the smooth page-turning animations and 8-bit styled content!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+📜 License
+This project is licensed under the MIT License.
 
-## Learn More
+🙏 Acknowledgements
+Next.js
+NES.css
+Tailwind CSS
+Enjoy your journey through the Warp 8-Bit Book Experience! 🎉npm run dev
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
