@@ -26,17 +26,17 @@ To run this project locally, follow these steps:
    git clone https://github.com/dancer/8bit.git
 
 
-Navigate to the project directory:
+2. Navigate to the project directory:
+    ```bash
+    cd 8bit
 
-cd 8bit
+3. Install dependencies:
+    ```bash
+    npm install
 
-Install dependencies:
-
-npm install
-
-Run the development server:
-
-npm run dev
+4. Run the development server:
+    ```bash
+    npm run dev
 
 Open http://localhost:3000 in your browser to see the result.
 
