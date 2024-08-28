@@ -4,6 +4,7 @@ import Page from './Page';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 const Book: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(0);
   const [isFlipping, setIsFlipping] = useState(false);

@@ -1,10 +1,20 @@
 import Book from "@/components/Book";
+import RetroPayroll from "@/components/RetroPayroll";
 import Image from "next/image";
+import Customize from "@/components/Customize";
+import Music from "@/components/Music";
+import RetroFAQ from "@/components/RetroFAQ";
+import Boss from "@/components/Boss";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 relative">
-      <div className="fixed top-0 left-0 w-full overflow-hidden whitespace-nowrap text-white bg-gradient-to-r from-black via-gray-800 to-black bg-opacity-60 z-50">
+      {/* buttons */}
+      <div className="absolute top-10 right-4 z-50 flex gap-2">
+        <a href="https://joinwarp.com/demo" className="nes-btn is-primary">Demo</a>
+        <a href="https://joinwarp.com/invite" className="nes-btn is-success">Sign Up</a>
+      </div>
+      <div className="absolute top-0 left-0 w-full overflow-hidden whitespace-nowrap text-white bg-gradient-to-r from-black via-gray-800 to-black bg-opacity-60 z-50">
         <div className="relative flex overflow-x-hidden">
           <div className="py-1 animate-marquee flex items-center">
             <div className="marquee-content flex gap-20 items-center">
@@ -66,22 +76,21 @@ export default function Home() {
             </div>
           </div>
         </div>      </div>
-{/* buttons */}
-      <div className="absolute top-10 right-4 z-50 flex gap-2">
-        <a href="https://joinwarp.com/demo" className="nes-btn is-primary">Demo</a>
-        <a href="https://joinwarp.com/invite" className="nes-btn is-success">Sign Up</a>
-      </div>
-
 {/* title/trophy */}
-      <div className="flex flex-col items-center">
-        <div className="flex items-center">
-          <h1 className="text-4xl text-white font-bold mr-4 text-shadow">JOIN WARP</h1>
-          <i className="nes-icon trophy is-large"></i>
-        </div>
-        <h2 className="text-xs text-white mt-2 text-shadow-sm">MINIGAME FOR GREAT MINDS</h2>
-      </div>
+<div className="flex flex-col items-center mb-16">
+  <div className="flex items-center">
+    <h1 className="text-8xl text-white font-bold mr-4 text-shadow-lg bubbly-text [-webkit-text-stroke:3px_white] font-extrabold">RETRO WARP</h1>
+    <i className="nes-icon trophy is-large "></i>
+  </div>
+  <h2 className="text-xl text-white mt-2 text-shadow-md bubbly-text-sm [-webkit-text-stroke:1px_white]">MINIGAME FOR GREAT MINDS</h2>
+</div>
 
+
+<RetroPayroll />
 <Book />
+<Customize />
+<Boss />
+<RetroFAQ />
 
 {/* /footer */}
       <div>
@@ -104,11 +113,8 @@ export default function Home() {
             <i className="nes-icon linkedin"></i>
           </a>
         </section>
-
-{/* octocat */}
-        <section className="octocat absolute bottom-0 left-4 flex gap-2 items-center scale-50">
-          <i className="nes-octocat animate"></i>
-        </section>
+{/* music */}
+      <Music />
       </div>
     </main>
   );

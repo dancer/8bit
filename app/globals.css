@@ -93,6 +93,17 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.nes-container {
+  margin-top: 2rem;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.nes-text.is-primary {
+  color: #92cc41;
+}
+
 .text-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -260,6 +271,56 @@ body {
   font-size: 12px;
 }
 
+.compliance-catcher {
+  background-color: #f0f0f0;
+  border: 4px solid #000;
+  image-rendering: pixelated;
+}
+.compliance-catcher__game-area {
+  position: relative;
+  height: 200px;
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+.compliance-catcher__document {
+  position: absolute;
+  font-size: 20px;
+  line-height: 1;
+  transition: top 1s linear;
+}
+
+.compliance-catcher__folder {
+  position: absolute;
+  font-size: 40px;
+  line-height: 1;
+}
+.compliance-catcher__score {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.compliance-catcher__time {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.compliance-catcher__start-button {
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.compliance-catcher__start-button:hover {
+  background-color: #45a049;
+}
+
+
 button {
   position: absolute;
   top: 50%;
@@ -273,4 +334,102 @@ button {
 
 button:hover {
   background-color: #555;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #6dff99, #4caf50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.rotating-gradient {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.gradient-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.bubbly-text {
+  animation: bubbly 0.7s ease-in-out infinite alternate;
+}
+
+.bubbly-text-sm {
+  animation: bubbly 0.7s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+.extrabold{
+  font-weight: 900;
+
+}
+
+
+
+@keyframes bubbly {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-sm {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-shadow-lg {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.text-shadow-md {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.image-hover-grow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-hover-grow:hover {
+  transform: scale(1.05);
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.flip-horizontal.image-hover-grow:hover {
+  transform: scaleX(-1) scale(1.05);
+}
+
+.text-custom-green {
+  color: #4caf50;
+}
+
+.faq-btn:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.tilt-up {
+  transform: perspective(1000px) rotateX(45deg);
+}
+
+.red {
+  color: #ff0000;
 }
